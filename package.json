@@ -1,0 +1,23 @@
+{
+  "name": "vue-uploadcare",
+  "version": "1.0.0",
+  "description": "Vue component for the Uploadcare widget.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evseevdev/vue-uploadcare.git"
+  },
+  "keywords": [
+    "uploadcare",
+    "vue.js"
+  ],
+  "author": "Vladimir Evseev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evseevdev/vue-uploadcare/issues"
+  },
+  "homepage": "https://github.com/evseevdev/vue-uploadcare#readme"
+}
