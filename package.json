@@ -2,7 +2,7 @@
   "name": "vue-uploadcare",
   "version": "1.0.0",
   "description": "Vue component for the Uploadcare widget.",
-  "main": "index.js",
+  "main": "vue-uploadcare.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/evseevdev/vue-uploadcare/issues"
   },
-  "homepage": "https://github.com/evseevdev/vue-uploadcare#readme"
+  "homepage": "https://github.com/evseevdev/vue-uploadcare#readme",
+  "dependencies": {
+    "uploadcare-widget": "^2.10.3"
+  }
 }

@@ -3,6 +3,8 @@
 </template>
 
 <script>
+  import uploadcare from 'uploadcare-widget';
+  
   export default {
     props: {
       url: {
