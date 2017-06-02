@@ -13,7 +13,8 @@
     },
     data() {
       return {
-        uploadcareUrl: ""
+        uploadcareUrl: "",
+        widget: ''
       }
     },
     mounted() {
@@ -22,21 +23,28 @@
     watch: {
       uploadcareUrl() {
         this.updatePropUrl();
+      },
+      url() {
+        this.updateWidgetValue();
       }
     },
     methods: {
 
       initWidget() {
-        const widget = uploadcare.Widget(this.$el);
-        this.url && widget.value(this.url);
+        this.widget = uploadcare.Widget(this.$el);
+        this.updateWidgetValue();
 
-        widget.onUploadComplete((info) => {
+        this.widget.onUploadComplete((info) => {
           this.uploadcareUrl = info.cdnUrl;
         });
       },
       
       updatePropUrl() {
         this.$emit('update:url', this.uploadcareUrl);
+      },
+
+      updateWidgetValue() {
+        this.widget && this.widget.value(this.url);
       }
     }
   };
